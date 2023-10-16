@@ -37,6 +37,32 @@ body {
     max-height: 100vh;
     background-color: $white;
 
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header main";
+
+        &__header {
+            border-radius: 0 0 0 0 !important;
+
+            h3 {
+                transform: scale(1.8);
+            }
+        }
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__list {
+                width: 100%;
+            }
+        }
+    }
+
     &__header {
         grid-area: header;
         display: flex;
