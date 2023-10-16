@@ -1,0 +1,29 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Fonts
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap');
+$primary-font: 'Hanken Grotesk', sans-serif;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Colors
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Primary
+$light-red: hsla(0, 100%, 67%, .15);
+$orangey-yellow: hsla(39, 100%, 56%, .15);
+$green-teal: hsla(166, 100%, 37%, .15);
+$cobalt-blue: hsla(234, 85%, 45%, .15);
+
+// Gradients
+$light-slate-blue: hsl(252, 100%, 67%);
+$light-royal-blue: hsl(241, 81%, 54%);
+$gradient-1: linear-gradient(to bottom, #7857ff, #694cf9, #5941f4, #4736ee, #2e2be9);
+
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
+$gradient-2: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
