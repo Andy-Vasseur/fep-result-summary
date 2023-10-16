@@ -1,3 +1,6 @@
+// Tools
+import { useState } from 'react';
+
 // Data
 import data from './assets/challenge/data.json';
 
@@ -7,7 +10,31 @@ import MemoryIcon from './assets/img/icon-memory.svg';
 import VerbalIcon from './assets/img/icon-verbal.svg';
 import VisualIcon from './assets/img/icon-visual.svg';
 
+// Modal Component
+function Modal({ onClose }) {
+  return (
+    <div className="Modal">
+      <div className="Modal__content">
+        <p>This functionality is not available yet.</p>
+        <button onClick={onClose}>
+          Close
+        </button>
+      </div>
+    </div>
+  )
+}
+
 function App() {
+
+  const [modalVisible, setModalVisible] = useState(false)
+
+  const handleBtnClick = () => {
+    setModalVisible(true)
+  }
+
+  const closeModal = () => {
+    setModalVisible(false)
+  }
 
   const icons = {
     Reaction: ReactionIcon,
@@ -45,7 +72,12 @@ function App() {
             ))
           }
         </ul>
-        <button>Continue</button>
+        <button onClick={handleBtnClick}>
+          Continue
+        </button>
+        {
+          modalVisible && <Modal onClose={closeModal} />
+        }
       </div>
     </div>
   )
